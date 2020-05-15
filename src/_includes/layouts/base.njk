@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="pt-br">
+
+  {% include "components/head.njk" %}
+  
+  <body>
+
+    {% include "components/header.njk" %}
+
+    {{ content | safe }}
+    
+    {% include "components/footer.njk" %}
+
+  </body>
+  
+</html>
