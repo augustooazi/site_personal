@@ -106,3 +106,24 @@ h3 {
 footer {
     border-top: 1px solid hsla(120, 75%, 60%, 0.8);
 }
+
+footer p, footer li {
+    font-size: 0.8em;
+    display: inline;
+}
+
+footer ul {
+    display: inline;
+}
+
+.lang-sw {
+    background-color: hsla(0, 0%, 93%, 1);
+    transition: 0.5s ease;
+    padding: 0.2em;
+    border-radius: 5%;
+}
+
+.lang-sw:hover {
+    color: hsla(120, 75%, 60%, 0.8);
+    background-color: hsla(0, 0%, 97%, 1);
+}

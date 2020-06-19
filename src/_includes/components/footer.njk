@@ -1,3 +1,14 @@
 <footer>
-    <small>&copy Augusto Oazi 2020. Desenvolvido com <a href="https://11ty.dev" target="_blank" rel="noopener">Eleventy</a>. Hospedado em <a href="https://netlify.com" target="_blank" rel="noopener">Netlify</a>. Código-fonte no <a href="https://github.com/augustooazi/site_personal" target="_blank" rel="noopener">Github</a>.</small>
+    <small>&copy Augusto Oazi 2020. {{ 'ssg' | i18n }} <a href="https://11ty.dev" target="_blank" rel="noopener">Eleventy</a>. {{ 'host' | i18n }} <a href="https://netlify.com" target="_blank" rel="noopener">Netlify</a>. {{ 'source' | i18n }} <a href="https://github.com/augustooazi/site_personal" target="_blank" rel="noopener">Github</a>.</small>
+    <br>
+    {% set pageUrl = page.url.split('/').slice(2).join('/') %}
+
+    {% if locales.length %}
+        <p><em>{{ 'select_language' | i18n }}:</em></p>
+        <ul>
+            {% for locale in locales -%}
+            <li class="lang-sw"><a href="/{{ locale.code }}/{{ pageUrl }}" rel="alternate" hreflang="{{ locale.code }}">{{ locale.label }}</a></li>
+            {% endfor -%}
+        </ul>
+    {% endif %}
 </footer>

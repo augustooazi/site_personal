@@ -1,0 +1,41 @@
+---
+permalink: /{{ locale }}/index.html
+layout: layouts/base.njk
+---
+
+{% set metaTitle = site[locale].metaTitle %}
+{% set metaDescription = site[locale].metaDescription %}
+
+<section id="intro">
+    <p>{{ 'intro' | i18n }}</p>
+</section>
+
+<h2>{{ 'project_header' | i18n }}</h2>
+<section id="projetos">
+    <ul>
+        <li>
+            <a href="https://olheiro.net" target="_blank" rel="noopener"><h3>Olheiro</h3></a>
+            <div class="desc">
+                <p>{{ 'olheiro' | i18n }}</p>
+            </div>
+        </li>
+        <li>
+            <a href="https://anythingpalmeiras.com" target="_blank" rel="noopener"><h3>Anything Palmeiras</h3></a>
+            <div class="desc">
+                <p>{{ 'palmeiras' | i18n }}</p>
+            </div>
+        </li>
+        <li>
+            <h3>Sites</h3>
+            <div class="desc">
+                <p>{{ 'sites' | i18n }}</p>
+            </div>
+            <ul class="sites">
+                <li><a href="https://www.oaziengenharia.com" target="_blank" rel="noopener">Oazi Engenharia</a></li>
+                <li><a href="https://www.rafaelaoazi.com" target="_blank" rel="noopener">Rafaela Oazi</a></li>
+            </ul>
+        </li>
+    </ul>
+</section>
+
+<p>{{ 'social' | i18n }}</p>

@@ -11,7 +11,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "clean-css": "^4.2.3"
+    "clean-css": "^4.2.3",
+    "eleventy-plugin-i18n": "^0.1.0"
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.11.0"
