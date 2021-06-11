@@ -4,8 +4,8 @@ module.exports = {
       'pt': "Site pessoal de Augusto Anteghini Oazi."
     },
     intro: {
-      'en': "Hi, my name is Augusto. I am a Software Engineer at Oazi Engineering. I love football (and Palmeiras) and I'm deeply interested in new technologies.",
-      'pt': "Oi, meu nome é Augusto. Sou engenheiro de software na Oazi Engenharia. Amo futebol (e o Palmeiras) e me interesso muito por novas tecnologias."
+      'en': "Hi, my name is Augusto. I am a Data Editor at Stats Perform. I love football and I'm deeply interested in new technologies.",
+      'pt': "Oi, meu nome é Augusto. Sou editor de dados na Stats Perform. Amo futebol e me interesso muito por novas tecnologias."
     },
     project_header: {
       'en': "Projects",
